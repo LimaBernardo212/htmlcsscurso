@@ -1,0 +1,35 @@
+@charset "UTF-8";
+ body{
+    background-color:#d97b66b0 ;
+    font-family: 'Times New Roman', Times, serif;
+    /*Medidas absolutas do font-size:
+    cm, mm,in, px, pt, pc
+    Medidas relativas:
+    em, ex, rem, vw, vh, % */
+    /*weight= peso width = lagura height = altura*/
+    /*font-weight= lighter, normal, bold,bolder/numeric 100-900*/
+    /*font-size: 1em;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bolder;*/
+font: italic,bold,1em, monospace;    /*shorthand; ordem- font-style -> font-weight -> font-size -> font-family*/
+ }
+div{
+    background-color:rgba(242, 81, 22, 0.816) ;
+    padding: 30px;
+    border-radius:3px;
+}
+h1, h2{
+    text-align: center;
+    font-size: medium;
+}
+
+p{
+    text-align: justify;
+    font-size: 1em;
+}
+main{
+    background-image: linear-gradient(130deg,
+    #F25116,#D93B18,#D97B66);
+    padding: 20px;
+}

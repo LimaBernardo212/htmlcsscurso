@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX011</title>
+</head>
+<body>
+    <h1>Midias em HTML</h1>
+    <h2>Imagens dinamicas</h2>
+    <p>Abra este site em diferentes dispositivos ou no mesmo só que com a janela menor ou maior.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/M.png" type="image/png">
+        
+        <img src="Imagens/G.png" alt="">
+    </picture>
+    <p>Cuidado:Os sources tem que ser colocados em ordem decrssente ou seja o maior em baixo e os menores em cima</p>
+    <h2>Sons</h2>
+    <p>Aprender audio em HTML5</p>
+    
+    <p>Audio 1</p>
+    <audio src="Musicas/guanacast-33.mp3" controls autoplay></audio>
+    <p>Audio 2</p>
+    <audio preload="metadata" controls loop>
+        <source src="Musicas/happy-mistake.mp3" type="audio/mpeg">
+        <p>Infelismente seu navegador por algum motivo não executou o som <a href="Musicas/guanacast-33.mp3" download="Musicas/guanacast-33.mp3" target="_blank" type="audio/mpeg">Clique aqui para baixar o MP3</a></p>
+    </audio>
+</body>
+</html>

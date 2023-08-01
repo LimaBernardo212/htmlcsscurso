@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex022</title>
+    <style>
+        /* 
+        id = #
+        class = .
+        pseudoclass = :
+        pseudoelemnt = ::
+        children = >*/
+        body{
+            font-family: sans-serif;
+        }
+        a{
+            
+            color: violet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: blueviolet;
+
+        }
+        a:hover{
+            color: rgb(80, 25, 131);
+            text-decoration: none;
+        }
+        a:active{color: rgb(47, 0, 255);}
+        a::after{
+            content: '»';
+        }
+        a::before{
+            content: '«';
+        }
+        a.especial::before
+        {
+            content: '(';
+        }
+        a.especial::after{
+            content: ')';
+        }
+    </style>
+</head>
+<body>
+    <h1><em><ins>Links</ins></em></h1>
+    <ol>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" rel="external">Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external">Canal no youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="external" class="especial">Site do curso em video</a></li>
+    </ol>
+</body>
+</html>

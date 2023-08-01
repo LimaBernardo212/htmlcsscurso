@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    background-color: grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 64px;
+}
+h1{
+    color: gold;
+    background-color: black;
+}
+h2{
+    color: goldenrod;
+}
+p{
+    text-align: justify;
+}
+a{
+    text-align: center;
+}

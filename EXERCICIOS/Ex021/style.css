@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*
+ID = #
+CLASS = .
+*/
+body{
+    background-color: rgba(0, 255, 255, 0.452);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3{
+    color: rgb(0, 0, 0);
+}
+.title2{
+    color: rgb(0, 38, 119);
+}
+.basico{
+    color: rgb(20, 58, 83);
+}
+.intermediario{
+    color: rgb(36, 68, 87);
+}
+.avancado{
+    color: rgb(14, 18, 22);
+}

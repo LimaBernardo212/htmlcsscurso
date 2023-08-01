@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex023</title>
+    <style>
+        body{
+            background-color:rgb(63, 117, 83) ;
+            font-family: monospace;
+        }
+        header{
+            background-color: rgba(0, 143, 55, 0.637);
+            padding: 40px;
+            margin: 20px 5px 20px 5px;
+            box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.404);
+        }
+        span{
+            margin-left: 100px;
+            background-color: rgba(0, 143, 55, 0.637);
+        }
+        span:hover{
+            background-color: rgba(0, 107, 41, 0.637);
+        }
+        #especial{
+            text-align: start;
+            margin-left: 5px;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        nav{
+            background-color: rgba(0, 143, 55, 0.637);
+            box-shadow:1px 1px 2px 2px rgba(0, 0, 0, 0.582);
+            
+        }
+        article{
+            border-width: 10px;
+            border-color: rgba(49, 148, 87, 0.637) ;
+            border-style: solid;
+            padding: 20px 20px 20px 60px ;
+            background-color:rgba(113, 201, 146, 0.637) ;
+            border-radius: 0px 5px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.719);
+        }
+        footer > p{
+            text-align: center;
+            background-color: rgba(66, 122, 87, 0);
+        }
+        footer{
+            background-color: rgba(66, 122, 87, 0);  
+        }
+        a{
+            text-align: center;
+        }
+        #Bolas{
+            height: 150px;
+            width: 150px;
+            margin: 30px;
+            border-radius: 30% 30%;
+            background-color: rgba(255, 255, 255, 0.507);
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grouping tags</h1>
+        <nav>
+            <span><a href="#">baba</a></span>
+            <span><a href="#">bibi</a></span>
+            <span><a href="#">bobo</a></span>
+            <span><a href="#">bubu</a></span>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Div's e span's</h2>
+            <p> Existem duas caixas grouping tags a <div>DIV</div> e a <span id="especial">SPAN</span></p>
+        </article>
+    </main>
+    <footer>
+        <p>desenvolvido por @Settings</p>
+    </footer>
+    <div id="Bolas">OK</div>
+    <script> 
+    document.getElementById('Bolas').addEventListener('mouseenter', clicar)
+    document.getElementById('Bolas').addEventListener('mouseout', fora)
+    document.getElementById('Bolas').addEventListener('click', clicare)
+    function clicar(){
+        document.getElementById('Bolas').style.backgroundColor = 'blue'
+    }
+    function fora(){
+        document.getElementById('Bolas').style.backgroundColor = 'green'
+    }
+    function clicare(){
+        document.getElementById('Bolas').style.backgroundColor = 'red'
+    }
+    </script>
+
+</body>
+</html>

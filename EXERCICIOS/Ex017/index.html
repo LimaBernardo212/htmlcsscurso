@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex017</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="text" on>
+        <h1>Fontes em CSS</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ab nihil, pariatur, distinctio esse doloremque amet culpa adipisci saepe odio dicta et fuga a ducimus vel, consectetur eius magnam placeat.</p>
+        <!--16px = 1em-->
+        
+       
+    </div>
+    <p></p>
+    <main> 
+        <h2>SUB</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque in vitae corrupti dolor, pariatur eius sed voluptatum tempora sunt, obcaecati fugit ad non natus voluptas excepturi qui? Itaque, minima.</p>
+    </main >
+    <script>
+        var click
+         var ob = document.querySelector('div#text')
+         ob.addEventListener('mouseenter', intrare)
+         ob.addEventListener('mouseout', sair)
+         ob.addEventListener('click', clicare)
+         ob.addEventListener('dblclick',clicare)
+         
+        
+         function intrare(){
+            document.body.querySelector('div#text').innerHTML = '<h1>Fontes em CSS</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ab nihil, pariatur, distinctio esse doloremque amet culpa adipisci saepe odio dicta et fuga a ducimus vel, consectetur eius magnam placeat</p>'
+            }
+        function sair(){
+            document.body.querySelector('div#text').innerHTML ='<h1>Fontes em CSS</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ab nihil, pariatur, distinctio esse doloremque amet culpa adipisci saepe odio dicta et fuga a ducimus vel, consectetur eius magnam placeat.</p>'
+        }
+        function clicare(){
+                ob = document.querySelector('div#text')
+                ob.innerHTML = '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ab nihil, pariatur, distinctio esse doloremque amet culpa adipisci saepe odio dicta et fuga a ducimus vel, consectetur eius magnam placeat.</p>'
+             
+             
+            }
+    </script>
+</body>
+</html>
