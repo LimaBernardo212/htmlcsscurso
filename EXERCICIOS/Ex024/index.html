@@ -6,16 +6,28 @@
     <title>Ex024</title>
     <style>
         div.cube{
-            border: solid black;
-            display: inline;
+            border:  2px solid black;
+            display: inline-block;
             width: 300px;
             height: 300px;
+            background-color: white;
+            padding: 30px;
+            margin-left: 3px;
+            border-radius: 2%;
+            background-image: linear-gradient(to bottom, red , orange);
+        }
+        div#img{
+            display: inline-block;
+            background-image: url('imagens/pattern004.png');
+        }
+        body{
+            background-image: url("imagens/wallpaper002.jpg");
         }
     </style>
 </head>
 <body>
     <div class="cube"></div>
     <div class="cube"></div>
-    <div class="cube"></div>
+    <div  class="cube" id="img"></div>
 </body>
 </html>
