@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex025</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia de tabelas grandes
+    table
+        thead
+            tr, td , th
+        tbody
+            tr, td, th
+        tfoot
+            tr, td, th
+    -->
+    <table>
+        <thead><tr><th>Estado</th><th>População</th></tr></thead>
+        <tfoot><tr><th>Valor Total</th><td>210.147.125</td></tr></tfoot>
+        <tbody>
+            <tr><td>São Paulo</td> <td>45 919 049</td></tr>
+            <tr><td>Mina Gerais</td> <td>20 538 718</td></tr>
+            <tr><td>Rio de janeiro</td> <td>16 054 524</td></tr>
+            <tr><td>Bahia</td><td>14 136 417	</td></tr>
+            <tr><td>Paraná</td><td>11 443 208	</td></tr>
+            <tr><td>Rio Grande do Sul</td> <td>10 880 506</td></tr>
+            <tr><td>Penambuco</td><td>9 058 155	</td></tr>
+            <tr><td>Ceará</td><td>8 791 688	</td></tr>
+            <tr><td>Pará</td><td>8 116 132</td></tr>
+            <tr><td>Santa Catarina</td><td>7 609 601</td></tr>
+            <tr><td>Goias</td><td>7 055 228</td></tr>
+            <tr><td>Maranhão</td><td>6 775 152	</td></tr>
+            <tr><td>Paraiba</td><td>3 974 495	</td></tr>
+            <tr><td>Amazonas</td><td>3 941 175	</td></tr>
+            <tr><td>Espirito Santo</td> <td>3 833 486</td></tr>
+            <tr><td>Mato Grosso</td><td>3 658 813</td></tr>
+            <tr><td>Rio Grande do Norte</td> <td>3 302 406</td></tr>
+            <tr><td>Piauí</td><td>3 269 200	</td></tr>
+        </tbody>
+        
+    </table>
 </body>
 </html>
