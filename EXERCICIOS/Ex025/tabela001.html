@@ -15,10 +15,20 @@
         td, th{
             border: 1px solid black;
             padding: 10px;
+            
         }
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgrey;
+        }
+        #row{
+            width: 50px;
         }
     </style>
 </head>
@@ -26,6 +36,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia de tabelas grandes
     table
+        capition
         thead
             tr, td , th
         tbody
@@ -34,8 +45,9 @@
             tr, td, th
     -->
     <table>
-        <thead><tr><th>Estado</th><th>População</th></tr></thead>
-        <tfoot><tr><th>Valor Total</th><td>210.147.125</td></tr></tfoot>
+        <caption>População dos estados</caption>
+        <thead><tr><th scope="col">Estado</th><th scope="col" id="row">População</th></tr></thead>
+        <tfoot><tr><th scope="row">Valor Total</th><td>210.147.125</td></tr></tfoot>
         <tbody>
             <tr><td>São Paulo</td> <td>45 919 049</td></tr>
             <tr><td>Mina Gerais</td> <td>20 538 718</td></tr>
