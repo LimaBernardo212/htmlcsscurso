@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pag3</title>
+    <style>
+    table{
+        width: 400px;
+        border-collapse: collapse;
+    }
+    p{
+        display: inline;
+        margin-left: 20px;
+        
+    }
+    #bor{
+        border-left: 1px solid black;
+        padding-left: 10px;
+    }
+    .td{
+        background-color: rgba(128, 128, 128, 0.644);
+    }
+    td{
+        text-align: center;
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <th><tr>
+            <td rowspan="2" class="td">Área</td>
+            <td rowspan="2" class="td">Disciplinas</td>
+            <td class="td">Notas</td>
+            
+            <td rowspan="2" class="td">Media</td>
+            
+        </tr>
+        <tr><td class="td"><p >Nota 1</p>  <p id="bor">Nota 2</p></td></tr>
+        </th>
+        <tr><td rowspan="4"><strong>Exatas</strong></td></tr>
+    </table>
+</body>
+</html>
