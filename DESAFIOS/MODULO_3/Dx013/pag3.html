@@ -5,41 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pag3</title>
     <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     table{
-        width: 400px;
+        width: 500px;
         border-collapse: collapse;
     }
-    p{
-        display: inline;
-        margin-left: 20px;
-        
-    }
-    #bor{
-        border-left: 1px solid black;
-        padding-left: 10px;
+    td{
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
     }
     .td{
-        background-color: rgba(128, 128, 128, 0.644);
-    }
-    td{
-        text-align: center;
-        border: 1px solid black;
+        color: rgba(255, 255, 255, 0.945);
+        font-weight: bold;
+        background-color: rgba(128, 128, 128, 0.829);
     }
     </style>
 </head>
 <body>
     <table>
-        <th><tr>
-            <td rowspan="2" class="td">Área</td>
-            <td rowspan="2" class="td">Disciplinas</td>
-            <td class="td">Notas</td>
-            
-            <td rowspan="2" class="td">Media</td>
-            
-        </tr>
-        <tr><td class="td"><p >Nota 1</p>  <p id="bor">Nota 2</p></td></tr>
-        </th>
-        <tr><td rowspan="4"><strong>Exatas</strong></td></tr>
+        <thead>
+            <th>
+                <tr><td rowspan="2" class="td">Área</td><td rowspan="2" class="td">Disciplinas</td><td colspan="2" class="td">Notas</td> <td rowspan="2" class="td">Medias</td></tr>
+                <tr><td class="td">Nota 1</td><td class="td">Nota 2</td></tr>
+            </th>
+        </thead>
+        <tbody>
+            <tr><td rowspan="4"><strong>Exatas</strong></td><td>Matematica</td><td>26.75</td> <td>35.0</td><td>21</td></tr>
+            <tr><td>Fisica</td><td>00</td><td>00</td><td>00</td></tr>
+            <tr><td>Quimica</td><td>00</td><td>00</td><td>00</td></tr>
+            <tr><td>Biologia</td><td>00</td><td>00</td><td>00</td></tr>
+            <tr><td colspan="4" class="td">Medias Exatas</td><td class="td">21</td></tr>
+            <tr><td rowspan="2"><strong>Humanas</strong></td><td>Historia</td><td>00</td><td>00</td><td>00</td></tr>
+            <tr><td>Geografia</td><td>00</td><td>00</td><td>00</td></tr>
+            <tr class="td"><td colspan="4">Medias Humanas</td><td>00</td></tr>
+        </tbody>
     </table>
 </body>
 </html>
