@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex026</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clik()">Clique e mim</a>
+    <div id="saida">
+
+    </div>
+    <script>
+        function clik() {
+            a = window.document.getElementById("saida")
+            a.innerHTML += '<p>Clicou</p>'
+        }
+    </script>
+</body>
+</html>
