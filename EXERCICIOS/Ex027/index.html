@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex027</title>
+    <style>
+        form{
+            padding: 30px;
+            border: 1px solid black;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario com label</h1>
+    <form action="cad.php" autocomplete="off" method="get" id="label">
+        <p>
+            <label for="it1">Nome:</label>
+            <input type="text" name="t1" id="it1">
+        </p>
+        <p>
+            <label for="it2">Sobre nome:</label>
+            <input type="text" name="t2" id="it2">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+    <h2>Formulario sem label</h2>
+   <form action="cad.php" id="sem" autocomplete="off">
+    <p>
+        Nome:
+        <input type="text" name="t1" id="it1">
+    </p>
+    <p>
+        Sobrenome:
+        <input type="text" name="t2" id="it2">
+    </p>
+    <input type="submit" value="Enviar">
+   </form>
+</body>
+</html>
