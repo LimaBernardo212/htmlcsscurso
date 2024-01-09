@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulario</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <form action="cad.php" method="post" autocomplete="on">
+        <div><label for="user">Username</label><input type="text" id="user" name="user" required maxlength="100" size="50" placeholder="Username" autocomplete="username"></div>
+        <div><label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" required minlength="8" maxlength="20" size="50"placeholder="Password" autocomplete="current-password">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar dados">
+        </div>
+    </form>
+</body>
+</html>
