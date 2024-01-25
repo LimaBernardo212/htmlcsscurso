@@ -60,5 +60,76 @@
             <input type="reset" value="Apagar">
         </div>
     </form>
+    <form action="cad.php" method="post" autocomplete="on">
+        <div>
+            <label for="estado">Estados do sudeste </label>
+            <select name="estado" id="estado">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="Rj">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="PR">Paraná</option>
+                    <option value="BA">Bahia</option>
+                    <option value="Sergipe">Sergipe</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="prof">Profissão</label>
+            <input type="text" name="prof" id="prof" list="list">
+            <datalist id="list">
+                <option value="Administração">Administração</option>
+                <option value="Contabilista">Contabilista</option>
+                <option value="Desenvolvedor">Desenvolvedor</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="Msg">Mensagem</label>
+            <textarea name="Msg" id="Msg" cols="50" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </div>
+    </form>
+    <form action="cad.php" method="post">
+        <div><label for="num1">Número 1:</label>
+        <input type="number" name="num1" id="num1" min="0" max="1000000000000000000000000000000000000000000000000000000" required oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)"></div>
+        <div>
+            <label for="num2">Número 2:</label>
+            <input type="number" name="num2" id="num2" max="10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" min="0" required oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </div>
+        <div>
+            <output id="soma">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apgar">
+        </div>
+    </form>
+    <form action="cad.php" method="get">
+        <div>
+            <label for="inum">Número</label>
+            <input type="range" name="inum" id="inum" min="0" max="10" oninput="Ival.innerHTML = Number(inum.value)" value="0">
+            <output id="Ival">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apgar">
+        </div>
+    </form>
+    <form action="cad.php" method="get">
+        <div>
+            <label for="iano">Ano de nascimento</label>
+            <input type="number" name="iano" id="iano" max="2024" min="1900" value="2000" oninput="idade.innerHTML = (Number(iano.value)- new Date().getFullYear())*-1"><output id="idade">1</output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apgar">
+        </div>
+    </form>
 </body>
 </html>
